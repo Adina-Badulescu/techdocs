@@ -56,12 +56,12 @@ p {
 }
 
 nav {
-  width: 30%;
+  width: 50%;
 }
 
 nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content:space-around;
   align-items: center;
 }
 
