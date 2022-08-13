@@ -2,16 +2,22 @@ const about = document.querySelector('#about')
 const contact = document.querySelector('#contact')
 const aboutContent = document.querySelector('#about-content')
 const contactContent = document.querySelector('#contact-content')
+// import wb from './winbox.bundle'
 
-var executedAbout = false;
-var executedContact = false;
+export var executed = {  
+  'aboutStatus': false,
+  'contactStatus': false
+};
+
+
+
 
 
 
 about.addEventListener('click', function () {
 
-  if (executedAbout === false) {
-    executedAbout = true;
+  if (executed.aboutStatus === false) {
+    executed.aboutStatus = true;
     const aboutBox = new WinBox({
       title: 'About Me',
       //modal: true,
@@ -28,6 +34,9 @@ about.addEventListener('click', function () {
       onblur: function () {
         this.setBackground('#777')
       },
+      onclose: function () {
+        executed.aboutStatus = false;
+      }
     })
   }
   else { return null; }
@@ -35,8 +44,8 @@ about.addEventListener('click', function () {
 })
 
 contact.addEventListener('click', () => {
-  if (executedContact === false) {
-    executedContact = true;
+  if (executed.contactStatus === false) {
+    executed.contactStatus == true;
     const contactBox = new WinBox({
       title: 'Contact Me',
       background: '#00aa00',
