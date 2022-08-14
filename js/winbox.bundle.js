@@ -5,7 +5,9 @@
  * Licence: Apache-2.0
  * https://github.com/nextapps-de/winbox
  */
-;(function () {
+;
+
+(function () {
   'use strict'
   var e,
     h = document.createElement('style')
@@ -178,7 +180,7 @@
           a.focus().fullscreen()
         })
       : a.addClass('no-full')
-    r(a.g.getElementsByClassName('wb-close')[0], 'click', function (b) {
+    r(a.g.getElementsByClassName('wb-close')[0], 'click', function (b) {      
       t(b)
       a.close()
       a = null
