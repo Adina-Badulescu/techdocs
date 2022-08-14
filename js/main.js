@@ -4,7 +4,7 @@ const aboutContent = document.querySelector('#about-content')
 const contactContent = document.querySelector('#contact-content')
 // import wb from './winbox.bundle'
 
-export var executed = {  
+var executed = {  
   'aboutStatus': false,
   'contactStatus': false
 };
@@ -16,8 +16,8 @@ export var executed = {
 
 about.addEventListener('click', function () {
 
-  if (executedAbout === false) {
-    executedAbout = true;
+  if (executed.aboutStatus === false) {
+    executed.aboutStatus = true;
     const aboutBox = new WinBox({
       title: 'About Me',
       //modal: true,
@@ -44,8 +44,8 @@ about.addEventListener('click', function () {
 })
 
 contact.addEventListener('click', () => {
-  if (executedContact === false) {
-    executedContact = true;
+  if (executed.contactStatus === false) {
+    executed.contactStatus = true;
     const contactBox = new WinBox({
       title: 'Contact Me',
       background: '#00aa00',
