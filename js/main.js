@@ -2,9 +2,15 @@ const about = document.querySelector('#about')
 const contact = document.querySelector('#contact')
 const aboutContent = document.querySelector('#about-content')
 const contactContent = document.querySelector('#contact-content')
+// import wb from './winbox.bundle'
 
-var executedAbout = false;
-var executedContact = false;
+export var executed = {  
+  'aboutStatus': false,
+  'contactStatus': false
+};
+
+
+
 
 
 
@@ -52,7 +58,10 @@ contact.addEventListener('click', () => {
       },
       onblur: function () {
         this.setBackground('#777')
-      },
+      },      
+      onclose: function () {
+        executed.contactStatus = false;
+      }
     })
   } else { return null; }
 
