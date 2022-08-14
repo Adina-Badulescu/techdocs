@@ -34,6 +34,9 @@ about.addEventListener('click', function () {
       onblur: function () {
         this.setBackground('#777')
       },
+      onclose: function () {
+        executed.aboutStatus = false;
+      }
     })
   }
   else { return null; }
