@@ -28,16 +28,40 @@
         <br>
         <span class="user-command"><span class="white-command">:</span><span class="blue-command">~</span><span
             class="white-command">$</span>
-          A "Fullstack" Developer</span>
+          esbuild index.ts<br>--platform=node <br>--bundle--minify <br>--outfile=built/index.js</span>
         <br>
         <span class="user-command"><span class="white-command">:</span><span class="blue-command">~</span><span
             class="white-command">$</span>
-          Welcome to my world!</span>
+          Done in 0.21s.</span>
         <br>
         <span class="user-command"><span class="white-command">:</span><span class="blue-command">~</span><span
             class="white-command">$</span>
-          Git push your repo</span>
+          git commit -m "App done"</span>
         <br>
+        <span class="user-command"><span class="white-command">:</span><span class="blue-command">~</span><span
+            class="white-command">$</span><span class="user-command-white"> git push</span></span>
+        <br>
+        <span class="user-command"><span class="white-command">:</span><span class="blue-command">~</span><span
+            class="white-command">$</span>
+        <pre class="user-command-white-pre">
+            name: dev
+            on: push
+            jobs:
+              FTP-Deploy-Action:
+              name: FTP-Deploy-Action
+              runs-on: self-hosted
+              steps:
+              - uses: actions/checkout@v2.3.2
+              with:
+              fetch-depth: 2
+              - name: FTP-Deploy-Action
+              uses: SamKirkland/FTP-Deploy-Action@beta-v4
+              with:
+                server: ${{ secrets.FTP_SERVER }}
+                username: ${{ secrets.FTP_USERNAME }}
+                password: ${{ secrets.FTP_PASSWORD }}
+        </pre></span><span class="user-command"><span class="white-command">:</span><span class="blue-command">~</span><span
+        class="white-command">$</span><span class="user-command-white-pre"> App deployed successfully</span></span>    
       </div>
 
     </main>
@@ -66,29 +90,33 @@
       <p>
       <ul>
         <li>How to reach me:</li>
-        <li><a href="mailto:me@techdocs.ro">me@techdocs.ro</a></li>                
+        <li><a href="mailto:me@techdocs.ro">me@techdocs.ro</a></li>
       </ul>
       </p>
       <p>
-        <ul>
-          <li>Add me on:</li>          
-          <li><a href="https://www.linkedin.com/in/adrian-badulescu-5970927a/" target="_blank">LinkedIn</a></li>
-        </ul>
+      <ul>
+        <li>Add me on:</li>
+        <li><a href="https://www.linkedin.com/in/adrian-badulescu-5970927a/" target="_blank">LinkedIn</a></li>
+      </ul>
       </p>
       <p>
-        <ul>
-          <li>Some projects:</li>
-          <li>
-            <a href="https://github.com/adrian-badulescu" target="_blank">GitHub</a>
-          </li>
-        </ul>
+      <ul>
+        <li>Some projects:</li>
+        <li>
+          <a href="https://github.com/adrian-badulescu" target="_blank">GitHub</a>
+        </li>
+      </ul>
       </p>
     </div>
   </div>
 
   <script src="js/winbox.bundle.js"></script>
   <script src="js/main.js"></script>
+<<<<<<< HEAD
+  <script src="js/Typewriter.js"></script>
+=======
 
+>>>>>>> 070610009b261bf7f53a7ec49308e6ab25929c4b
 </body>
 
 </html>

@@ -14,7 +14,7 @@ body {
   font-family: 'Roboto Mono', sans-serif;
   background-color: #5E2750;
   color: #ccc;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
 }
 
@@ -73,7 +73,7 @@ nav ul li {
 .container {
   max-width: 1000px;
   margin: auto;
-  height: 92vh;
+  height: 25vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -139,6 +139,10 @@ footer {
   color:white;
 }
 
+.user-command-white-pre {  
+  color: white;
+  margin-top: -2rem;
+}
 
 
 .white-command {
