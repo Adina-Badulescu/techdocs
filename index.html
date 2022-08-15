@@ -7,8 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css" />
   <script src="./js/jquery.js"></script>
-  <title>Portfolio</title>
-  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+  <title>@techdocs</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -28,18 +29,20 @@
         <br>
         <span class="user-command"><span class="white-command">:</span><span class="blue-command">~</span><span
             class="white-command">$</span>
-          esbuild index.ts<br>--platform=node <br>--bundle--minify <br>--outfile=built/index.js</span>
+            <pre class="user-command-white-pre">            esbuild index.ts
+            --platform=node
+            --bundle--minify
+            --outfile=built/index.js</pre>
+          </span>        
+        <span class="user-command"><span class="white-command">:</span><span class="blue-command">~</span><span
+            class="white-command">$</span><span class="white-command"> Done in 0.21s.</span>
+        </span>
         <br>
         <span class="user-command"><span class="white-command">:</span><span class="blue-command">~</span><span
-            class="white-command">$</span>
-          Done in 0.21s.</span>
+            class="white-command">$</span><span class="white-command"> git commit -m "App done"</span></span>
         <br>
         <span class="user-command"><span class="white-command">:</span><span class="blue-command">~</span><span
-            class="white-command">$</span>
-          git commit -m "App done"</span>
-        <br>
-        <span class="user-command"><span class="white-command">:</span><span class="blue-command">~</span><span
-            class="white-command">$</span><span class="user-command-white"> git push</span></span>
+            class="white-command">$</span><span class="white-command"> git push</span></span>
         <br>
         <span class="user-command"><span class="white-command">:</span><span class="blue-command">~</span><span
             class="white-command">$</span>
@@ -60,9 +63,12 @@
                 server: ${{ secrets.FTP_SERVER }}
                 username: ${{ secrets.FTP_USERNAME }}
                 password: ${{ secrets.FTP_PASSWORD }}
-        </pre></span><span class="user-command"><span class="white-command">:</span><span class="blue-command">~</span><span
-        class="white-command">$</span><span class="user-command-white-pre"> App deployed successfully</span></span>    
-      </div>
+        </pre>
+    </span><br>
+    <span class="user-command"><span class="white-command">:</span><span class="blue-command">~</span><span
+    class="white-command">$</span><span class="white-command"> App deployed successfully</span></span>
+   
+    </div>
 
     </main>
   </div>
