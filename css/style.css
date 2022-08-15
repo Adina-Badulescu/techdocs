@@ -7,11 +7,11 @@
 }
 
 :root {
+  height: 100%;
   --text-color: #0f0;
 }
 
 body {
-  height: 100%;
   font-family: 'Roboto Mono', sans-serif;
   background-color: #5E2750;
   color: #ccc;
