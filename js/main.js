@@ -47,7 +47,7 @@ contact.addEventListener('click', () => {
   if (executed.contactStatus === false) {
     executed.contactStatus = true;
     const contactBox = new WinBox({
-      title: 'Contact Me',
+      title: '',
       background: '#00aa00',
       width: '400px',
       height: '400px',
