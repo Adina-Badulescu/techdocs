@@ -7,6 +7,7 @@
 }
 
 :root {
+  height: 100%;
   --text-color: #0f0;
 }
 
@@ -73,7 +74,7 @@ nav ul li {
 .container {
   max-width: 1000px;
   margin: auto;
-  height: 25vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -142,6 +143,7 @@ footer {
 .user-command-white-pre {  
   color: white;
   margin-top: -2rem;
+  height: 130px;
 }
 
 
