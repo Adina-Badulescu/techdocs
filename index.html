@@ -15,7 +15,7 @@
 <body>
   <div class="container">
     <nav>
-      <ul>
+      <ul id="ul-top">
         <li id="about">/What-do-I-do</li>
         <li id="contact">/Contact</li>
         <li id="resume"><a class="resume" target="_blank" href="underconst.html">/Resume</a></li>
@@ -29,7 +29,7 @@
         <br>
         <span class="user-command"><span class="white-command">:</span><span class="blue-command">~</span><span
             class="white-command">$</span>
-            <pre class="user-command-white-pre">            esbuild index.ts
+            <pre class="user-command-white-pre-top">            esbuild index.ts
             --platform=node
             --bundle--minify
             --outfile=built/index.js</pre>
@@ -46,7 +46,7 @@
         <br>
         <span class="user-command"><span class="white-command">:</span><span class="blue-command">~</span><span
             class="white-command">$</span>
-        <pre class="user-command-white-pre">
+        <pre class="user-command-white-pre-end">
             name: dev
             on: push
             jobs:
@@ -64,7 +64,7 @@
                 username: ${{ secrets.FTP_USERNAME }}
                 password: ${{ secrets.FTP_PASSWORD }}
         </pre></span><span class="user-command"><span class="white-command">:</span><span class="blue-command">~</span><span
-        class="white-command">$</span><span class="user-command-white-pre"> App deployed successfully</span></span> 
+        class="white-command">$</span><span class="white-command"> App deployed successfully</span></span> 
    
     </div>
 
@@ -86,7 +86,13 @@
         <li class="aboutme">SQL Server</li>
       </ul>
       <p>With some effort I can manage Golang with Gin or .NET Core6</p>
-      <p>Kinds of apps that I enjoy to develop are: ERPs, APIs, reporting backends, custom software.</p>
+      <p>Kinds of apps that I enjoy to develop are:    </p>
+      <ul>
+        <li class="aboutme">ERPs</li>
+        <li class="aboutme">APIs</li>
+        <li class="aboutme">reporting backends</li>
+        <li class="aboutme">custom software</li>
+      </ul>
     </div>
 
     <div id="contact-content">
