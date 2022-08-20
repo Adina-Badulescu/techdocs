@@ -17,27 +17,83 @@ var executed = {
 about.addEventListener('click', function () {
 
   if (executed.aboutStatus === false) {
-    executed.aboutStatus = true;
-    const aboutBox = new WinBox({
-      title: 'About Me',
-      //modal: true,
-      width: '400px',
-      height: '400px',
-      top: 50,
-      right: 50,
-      bottom: 50,
-      left: 20,
-      mount: aboutContent,
-      onfocus: function () {
-        this.setBackground('#00aa00')
-      },
-      onblur: function () {
-        this.setBackground('#777')
-      },
-      onclose: function () {
-        executed.aboutStatus = false;
-      }
-    })
+    if (window.innerWidth > 701) {
+      console.log('into 701')
+      executed.aboutStatus = true;
+      const aboutBox = new WinBox({
+        title: 'About Me',
+        //modal: true,
+        width: '400px',
+        height: '400px',
+        top: 50,
+        right: 50,
+        bottom: 50,
+        left: 40,
+        mount: aboutContent,
+        onfocus: function () {
+          this.setBackground('#00aa00')
+        },
+        onblur: function () {
+          this.setBackground('#777')
+        },
+        onclose: function () {
+          executed.aboutStatus = false;
+        }
+      })
+    }
+
+    if (window.innerWidth > 490 && window.innerWidth <= 700) {
+      console.log("into 700");
+      executed.aboutStatus = true;
+      const aboutBox = new WinBox({
+        title: 'About Me',
+        //modal: true,
+        width: '400px',
+        height: '400px',
+        top: 50,
+        right: 50,
+        bottom: 50,
+        left: 20,
+        mount: aboutContent,
+        onfocus: function () {
+          this.setBackground('#00aa00')
+        },
+        onblur: function () {
+          this.setBackground('#777')
+        },
+        onclose: function () {
+          executed.aboutStatus = false;
+        }
+      })
+    }
+
+    490
+    if (window.innerWidth <= 490) {
+      console.log("into <= 490");
+      executed.aboutStatus = true;
+      const aboutBox = new WinBox({
+        title: 'About Me',
+        //modal: true,
+        width: '400px',
+        height: '400px',
+        top: 50,
+        right: 50,
+        bottom: 50,
+        left: 0,
+        mount: aboutContent,
+        onfocus: function () {
+          this.setBackground('#00aa00')
+        },
+        onblur: function () {
+          this.setBackground('#777')
+        },
+        onclose: function () {
+          executed.aboutStatus = false;
+        }
+      })
+    }
+
+
   }
   else { return null; }
 
@@ -45,27 +101,82 @@ about.addEventListener('click', function () {
 
 contact.addEventListener('click', () => {
   if (executed.contactStatus === false) {
-    executed.contactStatus = true;
-    const contactBox = new WinBox({
-      title: '',
-      background: '#00aa00',
-      width: '400px',
-      height: '400px',
-      top: 150,
-      right: 50,
-      bottom: 50,
-      left: 20,
-      mount: contactContent,
-      onfocus: function () {
-        this.setBackground('#00aa00')
-      },
-      onblur: function () {
-        this.setBackground('#777')
-      },      
-      onclose: function () {
-        executed.contactStatus = false;
-      }
-    })
+
+    if (window.innerWidth > 701) {
+      console.log('into 701')
+      executed.contactStatus = true;
+      const aboutBox = new WinBox({
+        title: '',
+        //modal: true,
+        width: '400px',
+        height: '400px',
+        top: 150,
+        right: 50,
+        bottom: 50,
+        left: 40,
+        mount: contactContent,
+        onfocus: function () {
+          this.setBackground('#00aa00')
+        },
+        onblur: function () {
+          this.setBackground('#777')
+        },
+        onclose: function () {
+          executed.contactStatus = false;
+        }
+      })
+    }
+
+    if (window.innerWidth > 490 && window.innerWidth <= 700) {
+      console.log("into 700");
+      executed.contactStatus = true;
+      const aboutBox = new WinBox({
+        title: '',
+        //modal: true,
+        width: '400px',
+        height: '400px',
+        top: 150,
+        right: 50,
+        bottom: 50,
+        left: 20,
+        mount: contactContent,
+        onfocus: function () {
+          this.setBackground('#00aa00')
+        },
+        onblur: function () {
+          this.setBackground('#777')
+        },
+        onclose: function () {
+          executed.contactStatus = false;
+        }
+      })
+    }
+
+    
+    if (window.innerWidth <= 490) {
+      console.log("into <= 490");
+      executed.contactStatus = true;
+      const aboutBox = new WinBox({
+        title: '',
+        //modal: true,
+        width: '300px',
+        height: '300px',
+        top: 150,
+        right: 50,
+        bottom: 50,
+        left: 20,
+        mount: contactContent,
+        onfocus: function () {
+          this.setBackground('#00aa00')
+        },
+        onblur: function () {
+          this.setBackground('#777')
+        },
+        onclose: function () {
+          executed.contacttStatus = false;
+        }
+      })
+    }
   } else { return null; }
 
 })
