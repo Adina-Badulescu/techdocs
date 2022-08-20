@@ -18,7 +18,7 @@ about.addEventListener('click', function () {
 
   if (executed.aboutStatus === false) {
     if (window.innerWidth > 701) {
-      console.log('into 701')
+
       executed.aboutStatus = true;
       const aboutBox = new WinBox({
         title: 'About Me',
@@ -100,12 +100,14 @@ about.addEventListener('click', function () {
 })
 
 contact.addEventListener('click', () => {
+
   if (executed.contactStatus === false) {
 
+
     if (window.innerWidth > 701) {
-      console.log('into 701')
+
       executed.contactStatus = true;
-      const aboutBox = new WinBox({
+      new WinBox({
         title: '',
         //modal: true,
         width: '400px',
@@ -128,9 +130,9 @@ contact.addEventListener('click', () => {
     }
 
     if (window.innerWidth > 490 && window.innerWidth <= 700) {
-      console.log("into 700");
+
       executed.contactStatus = true;
-      const aboutBox = new WinBox({
+      new WinBox({
         title: '',
         //modal: true,
         width: '400px',
@@ -152,11 +154,11 @@ contact.addEventListener('click', () => {
       })
     }
 
-    
+
     if (window.innerWidth <= 490) {
-      console.log("into <= 490");
+
       executed.contactStatus = true;
-      const aboutBox = new WinBox({
+      new WinBox({
         title: '',
         //modal: true,
         width: '300px',
@@ -173,7 +175,7 @@ contact.addEventListener('click', () => {
           this.setBackground('#777')
         },
         onclose: function () {
-          executed.contacttStatus = false;
+          executed.contactStatus = false;
         }
       })
     }
