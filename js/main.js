@@ -108,7 +108,7 @@ contact.addEventListener('click', () => {
 
       executed.contactStatus = true;
       new WinBox({
-        title: '',
+        title: 'How To',
         //modal: true,
         width: '400px',
         height: '400px',
@@ -133,7 +133,7 @@ contact.addEventListener('click', () => {
 
       executed.contactStatus = true;
       new WinBox({
-        title: '',
+        title: 'How To',
         //modal: true,
         width: '400px',
         height: '400px',
@@ -159,7 +159,7 @@ contact.addEventListener('click', () => {
 
       executed.contactStatus = true;
       new WinBox({
-        title: '',
+        title: 'How To',
         //modal: true,
         width: '300px',
         height: '300px',
