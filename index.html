@@ -1,12 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="./js/jquery.js"></script>
+  <title>@adrian-badulescu</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "j8gt4fdszl");
+</script>
 </head>
+
 <body>
-    <h1 style="color:red">Hello from the other side</h1>
+  <div class="container">
+    <nav>
+      <ul id="ul-top">
+        <li id="about">/I am</li>
+        <li id="contact">/Find me</li>
+        <li id="resume"><a class="resume" target="_blank" href="Adrian-Badulescu_CV.pdf">/Resume</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>adrian-badulescu:#<span class="cursor">|</span></h1>
+      <div class="terminal">
+        <span class="root-command"> <span class="white-command ">su adi</span> </span>
+        <br>
+        <span class="user-command"><span class="white-command">:</span><span class="blue-command">~</span><span
+            class="white-command">$</span>
+          <pre class="user-command-white-pre-top">            esbuild index.ts
+            --platform=node
+            --bundle--minify
+            --outfile=built/index.js</pre>
+        </span>
+        <span class="user-command"><span class="white-command">:</span><span class="blue-command">~</span><span
+            class="white-command">$</span><span class="white-command"> Done in 0.21s.</span>
+        </span>
+        <br>
+        <span class="user-command"><span class="white-command">:</span><span class="blue-command">~</span><span
+            class="white-command">$</span><span class="white-command"> git commit -m "App done"</span></span>
+        <br>
+        <span class="user-command"><span class="white-command">:</span><span class="blue-command">~</span><span
+            class="white-command">$</span><span class="white-command"> git push</span></span>
+        <br>
+        <span class="user-command"><span class="white-command">:</span><span class="blue-command">~</span><span
+            class="white-command">$</span>
+          <pre class="user-command-white-pre-end">
+            name: dev
+            on: push
+            jobs:
+              FTP-Deploy-Action:
+              name: FTP-Deploy-Action
+              runs-on: self-hosted
+              steps:
+              - uses: actions/checkout@v2.3.2
+              with:
+              fetch-depth: 2
+              - name: FTP-Deploy-Action
+              uses: SamKirkland/FTP-Deploy-Action@beta-v4
+              with:
+                server: ${{ secrets.FTP_SERVER }}
+                username: ${{ secrets.FTP_USERNAME }}
+                password: ${{ secrets.FTP_PASSWORD }}
+        </pre>
+        </span><span class="user-command"><span class="white-command">:</span><span class="blue-command">~</span><span
+            class="white-command">$</span><span class="white-command"> App deployed successfully</span></span>
+
+      </div>
+
+    </main>
+  </div>
+
+  <div class="hidden">
+    <div id="about-content">
+      <h2>What-do-I-do:$<span class="cursor">|</span></h2>
+      <p>Husband, freelancer in my spare time, analyst programmer in my daily position at an insurance corporate
+        company,
+        passionate about web apps development because learning-never ends :-)</p>
+      <p>My main areas of interest include developing and implementing front end apps, backends, APIs,
+        databases,reporting and lately DevOps.</p>
+      <p>Deploying in Azure cloud is in my top preferences but working on prem is also fine for me.
+        My favourite stack is:</p>
+      <ul>
+        <li class="aboutme">Vanilla JS, ReactJs</li>
+        <li class="aboutme">NodeJs</li>
+        <li class="aboutme">SQL Server</li>
+      </ul>
+      <p>With some effort I can manage Golang with Gin or .NET Core 6</p>
+      <p>Kinds of apps that I enjoy to develop are:</p>
+      <ul>
+        <li class="aboutme"><a href="underconst.html" target=”_blank”>ERP</a></li>
+        <li class="aboutme"><a href="underconst.html" target=”_blank”>APIs</a></li>
+        <li class="aboutme"><a href="underconst.html" target=”_blank”>Reporting backend</a></li>
+        <li class="aboutme"><a href="underconst.html" target=”_blank”>Custom software</a></li>
+        <li><a href="index.html" class="back">Go Back</a></li>
+      </ul>
+    </div>
+
+    <div id="contact-content">
+      <h2>contact-me:$<span class="cursor">|</span></h2>
+      <p>
+      <ul>
+        <li>How to reach me:</li>
+        <li><a href="mailto:me@adrian-badulescu.ro">me@adrian-badulescu.ro</a></li>
+      </ul>
+      </p>
+      <p>
+      <ul>
+        <li>Add me on:</li>
+        <li><a href="https://www.linkedin.com/in/adrian-badulescu-5970927a/" target="_blank">LinkedIn</a></li>
+      </ul>
+      </p>
+      <p>
+      <p>
+      <ul>
+        <li>Some projects:</li>
+        <li>
+          <a href="https://github.com/adrian-badulescu" target="_blank">GitHub</a>
+        </li>
+      </ul>
+      </p>
+      <p>
+      <ul>
+        <li>Published articles:</li>
+        <li>
+          <a href="https://medium.com/@adrianbadulescu/azure-webjob-to-encrypt-blobs-into-storage-account-with-node-js-90a0e43c6230"
+            target="_blank">Azure WebJob to encrypt blobs into Storage Account with Node.js</a>
+        </li>
+        <br>
+        <li>
+          <a href="https://medium.com/p/1d600cae30c0" target="_blank">From Node to Go with love</a>
+        </li>
+        <br>
+        <li>
+          <a href="https://medium.com/itnext/are-you-scared-to-deal-with-azure-functions-then-you-should-read-this-892c5f5d17ac" target="_blank">How to make in simple steps an Azure Function that zips and encrypts blobs with an HTTP trigger</a>
+        </li>
+        <br>
+        <li>
+          <a href="https://itnext.io/a-brief-understanding-over-stripe-payment-gateway-with-angular-14-asp-net-core-7-0-1503a16fd462" target="_blank">A Brief Understanding over Stripe Payment Gateway with Angular 14 & ASP.NET Core 7.0</a>
+        </li>
+      </ul>
+      </p>
+      <p>
+      <ul>
+        <li>
+        <li><a href="index.html" class="back">Go Back</a></li>
+        </li>
+      </ul>
+      </p>
+    </div>
+  </div>
+
+  <script src="js/winbox.bundle.js"></script>
+  <script src="js/main.js"></script>
+
 </body>
+
 </html>
